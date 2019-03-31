@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,700');
+
+
+:root {
+	--font: 'Lato',sans-serif;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+	transition: all .3s ease-in-out;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+html {
+	height: 100%;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+body {
+	display: flex;
+	background: url('../images/wood.jpg');
+	font-family: var(--font);
+	font-weight: 300;
+	align-items: center;
+	background-size: cover;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+/* Main Styles */
+
+.container {
+	display: flex;
+	width: 100%;
+	margin: 0 auto;
+	height: 650px;
+	align-items: center;
+  max-width: 1100px;
+	justify-content: space-between;
+}
+
+.section {
+	width: 30%;
+	background: #fff;
+	height: 440px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 3px;
+	flex-grow: 0;
+	padding: 40px;
+	text-align: center;
+	justify-content: space-around;
+}
+
+.section--high {
+	height: 500px;
+	display: flex;
+	justify-content: space-around;
+	padding: 50px;
+}
+.section__price {
+	color: green;
+	font-size: 50px;
+	font-weight: 700;
+}
+
+
+.section__img {
+	width: 140px;
+	padding-left: 25px;
+
+}
+.section__title {
+	color: #333333;
+	font-size: 55px;
+}
+.section__description {
+	color: #333333;
+	font-size: 20px;
+}
